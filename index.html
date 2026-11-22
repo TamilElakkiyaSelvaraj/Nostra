@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nastra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#home" class="logo">Nastra</a>
+
+        <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+
+        <div class="nav__links" id="navLinks">
+            <a class="nav__link" href="#home" onclick="closeMenu()">Home</a>
+            <a class="nav__link" href="#new-arrivals" onclick="closeMenu()">New Arrivals</a>
+            <a class="nav__link" href="#most-wanted" onclick="closeMenu()">Most Wanted</a>
+            <a class="nav__link" href="./collection.html" onclick="closeMenu()">Collections</a>
+            <a class="nav__link" href="./contact.html" onclick="closeMenu()">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home__section" id="home">
+
+        <!-- Carousel -->
+        <div class="carousel">
+            <img src="./img1.png" class="slide active" alt="Fashion 1">
+            <img src="./img2.png" class="slide" alt="Fashion 2">
+            <img src="./img3.png" class="slide" alt="Fashion 3">
+
+            <div class="slide__content">
+                <p>Summer Collections</p>
+                <h1>Level Up Your Style with Our Latest Collection</h1>
+                <button>Shop Now</button>
+            </div>
+
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+        <!-- Brands -->
+        <div class="container" id="brands">
+            <h2 class="section__title">Brands</h2>
+            <div class="brands">
+                <div class="brand">
+                    <img src="./puma.svg" alt="Puma">
+                    <p>Puma</p>
+                </div>
+                <div class="brand">
+                    <img src="./adidas.svg" alt="Adidas">
+                    <p>Adidas</p>
+                </div>
+                <div class="brand">
+                    <img src="./puma.svg" alt="Simple">
+                    <p>Simple</p>
+                </div>
+                <div class="brand">
+                    <img src="./nike.svg" alt="Nike">
+                    <p>Nike</p>
+                </div>
+                <div class="brand">
+                    <img src="./behance.svg" alt="Behance">
+                    <p>Behance</p>
+                </div>
+                <div class="brand">
+                    <img src="./twitch.svg" alt="Twitch">
+                    <p>Twitch</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Customer Experience -->
+        <div class="container">
+            <div class="experience__head">
+                <h2 class="section__title">We Provide Best Customer Experience</h2>
+                <p class="experience__text">We ensure the best customer experience with our premium products and services.</p>
+            </div>
+
+            <div class="features">
+                <div class="feature">
+                    <img src="./original.svg" alt="Original Product">
+                    <h3>Original Product</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia placeat impedit, sunt incidunt non laboriosam?</p>
+                </div>
+                <div class="feature">
+                    <img src="./smile.svg" alt="Satisfaction Guarantee">
+                    <h3>Satisfaction Guarantee</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vel quidem quasi velit rerum a fugiat.</p>
+                </div>
+                <div class="feature">
+                    <img src="./new_arrivals.svg" alt="New Arrival Everyday">
+                    <h3>New Arrival Everyday</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vel quidem quasi velit rerum a fugiat.</p>
+                </div>
+                <div class="feature">
+                    <img src="./free_shipping_truck.svg" alt="Free Shipping">
+                    <h3>Free Shipping</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vel quidem quasi velit rerum a fugiat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="container" id="new-arrivals">
+        <h2 class="section__title">New Arrivals</h2>
+        <div class="products">
+            <div class="arrival">
+                <img src="./shirt1.avif" alt="New Arrival 1">
+                <button>Shop Now</button>
+            </div>
+            <div class="arrival">
+                <img src="./shirt2.avif" alt="New Arrival 2">
+                <button>Shop Now</button>
+            </div>
+            <div class="arrival">
+                <img src="./shirt3.avif" alt="New Arrival 3">
+                <button>Shop Now</button>
+            </div>
+            <div class="arrival">
+                <img src="./shirt4.avif" alt="New Arrival 4">
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Most Wanted -->
+    <section class="container" id="most-wanted">
+        <h2 class="section__title">Most Wanted</h2>
+        <div class="products">
+            <div class="product-card">
+                <span class="sale-badge">SALE 30%</span>
+                <button class="wishlist-btn" onclick="toggleWishlist(this)">♡</button>
+                <img src="./shirt2.avif" alt="Rose Bouquet">
+                <div class="product-info">
+                    <h3>Rose Bouquet</h3>
+                    <p><span class="price">₹699</span> <span class="old-price">₹999</span></p>
+                </div>
+            </div>
+            <div class="product-card">
+                <span class="sale-badge">SALE 30%</span>
+                <button class="wishlist-btn" onclick="toggleWishlist(this)">♡</button>
+                <img src="./shirt3.avif" alt="Rose Bouquet">
+                <div class="product-info">
+                    <h3>Rose Bouquet</h3>
+                    <p><span class="price">₹699</span> <span class="old-price">₹999</span></p>
+                </div>
+            </div>
+            <div class="product-card">
+                <span class="sale-badge">SALE 30%</span>
+                <button class="wishlist-btn" onclick="toggleWishlist(this)">♡</button>
+                <img src="./shirt4.avif" alt="Rose Bouquet">
+                <div class="product-info">
+                    <h3>Rose Bouquet</h3>
+                    <p><span class="price">₹699</span> <span class="old-price">₹999</span></p>
+                </div>
+            </div>
+            <div class="product-card">
+                <span class="sale-badge">SALE 30%</span>
+                <button class="wishlist-btn" onclick="toggleWishlist(this)">♡</button>
+                <img src="./shirt1.avif" alt="Rose Bouquet">
+                <div class="product-info">
+                    <h3>Rose Bouquet</h3>
+                    <p><span class="price">₹699</span> <span class="old-price">₹999</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__grid">
+            <div>
+                <h3>Nastra</h3>
+                <p>Level up your style with the latest fashion.</p>
+            </div>
+            <div>
+                <h4>Links</h4>
+                <a href="#home">Home</a>
+                <a href="#new-arrivals">New Arrivals</a>
+                <a href="#most-wanted">Most Wanted</a>
+            </div>
+            <div>
+                <h4>Contact Us</h4>
+                <p>Email: hello@nastra.com</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+        </div>
+        <p class="footer__bottom">© 2026 Nastra. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

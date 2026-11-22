@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections | Nastra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Nastra</a>
+
+        <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+
+        <div class="nav__links" id="navLinks">
+            <a class="nav__link" href="index.html#home">Home</a>
+            <a class="nav__link" href="index.html#new-arrivals">New Arrivals</a>
+            <a class="nav__link" href="index.html#most-wanted">Most Wanted</a>
+            <a class="nav__link nav__link--active" href="collections.html">Collections</a>
+            <a class="nav__link" href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <main class="product_container">
+
+        <!-- Left: Filters -->
+        <aside class="left_sidebar">
+            <h2>Occasions</h2>
+            <ul>
+                <li><button class="filter-btn active" data-type="occasion" data-value="all">All</button></li>
+                <li><button class="filter-btn" data-type="occasion" data-value="summer">Summer</button></li>
+                <li><button class="filter-btn" data-type="occasion" data-value="party">Party</button></li>
+                <li><button class="filter-btn" data-type="occasion" data-value="beach">Beach</button></li>
+            </ul>
+
+            <h2>Colors</h2>
+            <ul>
+                <li><button class="filter-btn active" data-type="color" data-value="all">All</button></li>
+                <li><button class="filter-btn" data-type="color" data-value="red">Red</button></li>
+                <li><button class="filter-btn" data-type="color" data-value="blue">Blue</button></li>
+                <li><button class="filter-btn" data-type="color" data-value="green">Green</button></li>
+                <li><button class="filter-btn" data-type="color" data-value="black">Black</button></li>
+            </ul>
+        </aside>
+
+        <!-- Right: Search + Products -->
+        <div class="right_sidebar">
+            <form class="searchbar" id="searchForm">
+                <input type="text" id="searchInput" placeholder="Search products...">
+                <button type="submit">Search</button>
+            </form>
+
+            <p class="result-count" id="resultCount"></p>
+
+            <section class="product_collections">
+
+                <div class="product_details" data-occasion="summer" data-color="red">
+                    <div class="product_img">
+                        <img src="./shirt1.avif" alt="Floral Summer Shirt">
+                    </div>
+                    <div class="product__name--price">
+                        <h3>Floral Summer Shirt</h3>
+                        <p>₹ <span>200</span></p>
+                    </div>
+                </div>
+
+                <div class="product_details" data-occasion="summer" data-color="green">
+                    <div class="product_img">
+                        <img src="./shirt1.avif" alt="Summer Green Shirt">
+                    </div>
+                    <div class="product__name--price">
+                        <h3>Summer Green Shirt</h3>
+                        <p>₹ <span>299</span></p>
+                    </div>
+                </div>
+
+                <div class="product_details" data-occasion="party" data-color="black">
+                    <div class="product_img">
+                        <img src="./shirt1.avif" alt="Party Floral Shirt">
+                    </div>
+                    <div class="product__name--price">
+                        <h3>Party Floral Shirt</h3>
+                        <p>₹ <span>200</span></p>
+                    </div>
+                </div>
+
+                <div class="product_details" data-occasion="beach" data-color="blue">
+                    <div class="product_img">
+                        <img src="./shirt1.avif" alt="Beach Blue Shirt">
+                    </div>
+                    <div class="product__name--price">
+                        <h3>Beach Blue Shirt</h3>
+                        <p>₹ <span>349</span></p>
+                    </div>
+                </div>
+
+                <div class="product_details" data-occasion="party" data-color="red">
+                    <div class="product_img">
+                        <img src="./shirt1.avif" alt="Party Red Shirt">
+                    </div>
+                    <div class="product__name--price">
+                        <h3>Party Red Shirt</h3>
+                        <p>₹ <span>399</span></p>
+                    </div>
+                </div>
+
+                <div class="product_details" data-occasion="beach" data-color="green">
+                    <div class="product_img">
+                        <img src="./shirt1.avif" alt="Beach Linen Shirt">
+                    </div>
+                    <div class="product__name--price">
+                        <h3>Beach Linen Shirt</h3>
+                        <p>₹ <span>249</span></p>
+                    </div>
+                </div>
+
+            </section>
+
+            <p class="no-results" id="noResults">No products found. Try another search or filter.</p>
+        </div>
+    </main>
+
+       <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__grid">
+            <div>
+                <h3>Nastra</h3>
+                <p>Level up your style with the latest fashion.</p>
+            </div>
+            <div>
+                <h4>Links</h4>
+                <a href="#home">Home</a>
+                <a href="#new-arrivals">New Arrivals</a>
+                <a href="#most-wanted">Most Wanted</a>
+            </div>
+            <div>
+                <h4>Contact Us</h4>
+                <p>Email: hello@nastra.com</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+        </div>
+        <p class="footer__bottom">© 2026 Nastra. All rights reserved.</p>
+    </footer>
+
+    <script src="./collection.js"></script>
+</body>
+
+</html>
